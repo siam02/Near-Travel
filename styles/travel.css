@@ -1,43 +1,135 @@
 /* Common Styles */
 
-:root{
+:root {
     --primary-color: #FF5400;
-    --text-primary:#131318;
-    --text-secondary:#5A5A5D;
-    --text-white:#fff;
+    --secondary-color: #131318;
+    --info-color: #5A5A5D;
 }
 
-body{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: "Mulish", sans-serif;
 }
 
-.container{
+.container {
     width: 81.25%;
     max-width: 1170px;
     margin: 0 auto;
 }
 
-.description{
-    color: rgba(19, 19, 24, 0.70);
+.description {
+    color: var(--info-color);
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
 }
 
-.btn-primary{
+.btn-primary {
     border-radius: 8px;
     background: var(--primary-color);
     border: 0;
-    color: var(--text-white);
+    color: #fff;
     font-size: 20px;
     font-weight: 800;
 }
 
-.section-title{
-    color: var(--text-primary);
+.section-title {
+    color: var(--secondary-color);
     font-size: 40px;
     font-weight: 800;
 }
 
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
 /* Nav Style */
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.navbar .brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.navbar .brand h1 {
+    color: var(--secondary-color);
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.navbar .nav-items{
+    display: flex;
+    gap: 44px;
+    list-style: none;
+}
+
+.navbar .nav-items .nav-item{
+    color: #424247;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.navbar .nav-items .active{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+
+
+/* Responsive Style */
+
+/* Mobile Devices */
+
+@media screen and (max-width: 600px) {
+
+    /* Common Responsive Styles */
+    .container {
+        width: 90%;
+    }
+
+    /* Navbar Responsive Styles */
+
+    .navbar {
+        margin: 20px 0;
+    }
+
+    .navbar .brand {
+        gap: 0.5rem;
+    }
+
+    .navbar .toggler .toggler-icon{
+        font-size: 1.5rem;
+    }
+
+    .navbar .nav-items {
+        display: none;
+    }
+
+    .navbar .brand img{
+        width: 35px;
+    }
+
+    .navbar .brand h1 {
+        font-size: 1.5rem;
+    } 
+}
+
+/* Large Screens */
+
+@media screen and (min-width: 992px) {
+    .navbar .toggler {
+        display: none;
+    }
+}
