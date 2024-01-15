@@ -29,6 +29,27 @@ body {
     line-height: 26px;
 }
 
+.description p{
+    margin-bottom: 24px;
+}
+
+.description ul{
+    margin-left: 2rem;
+    margin-bottom:24px ;
+}
+
+.description ul li{
+    margin-bottom: 16px;
+}
+
+.description ul li:last-child{
+    margin-bottom: 0;
+}
+
+.description p:last-child{
+    margin-bottom: 0;
+}
+
 .btn-primary {
     border-radius: 8px;
     background: var(--primary-color);
@@ -43,6 +64,7 @@ body {
     color: var(--secondary-color);
     font-size: 40px;
     font-weight: 800;
+    margin-bottom: 24px;
 }
 
 .text-primary {
@@ -174,6 +196,33 @@ body {
 }
 
 
+/* Main section Style */
+
+main section{
+    margin-top: 100px;
+}
+
+/* Popular Tour Section Styles */
+
+.popular{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.popular .description{
+    margin-bottom: 32px;
+}
+
+.popular .popular-col{
+    flex: 1;
+}
+
+.popular-img{
+    width: 100%;
+}
+
+
 /* Responsive Style */
 
 
@@ -223,14 +272,55 @@ body {
     .banner-form .form-item:last-child{
         grid-column: span 2;
     }
+
+    /* Popular Tour Section */
+
+    .popular{
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .popular .description{
+        margin-bottom: 24px;
+    }
 }
 
 /* Mobile Devices */
 
 @media screen and (max-width: 576px) {
+
+    /* Common Styles for Mobile */
+    body {
+        font-size: 0.875rem;
+    }
+
     .container{
         width: 90%;
     }
+
+    .description {
+        color: var(--info-color);
+        line-height: 24px;
+    }
+    
+    .description p{
+        margin-bottom: 16px;
+    }
+    
+    .description ul{
+        margin-left: 2rem;
+        margin-bottom:16px ;
+    }
+    
+    .description ul li{
+        margin-bottom: 12px;
+    }
+
+    .section-title{
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    
 
     /* Navbar Mobile Design */
 
@@ -258,6 +348,11 @@ body {
         font-size: 1.5rem;
     }
 
+    /* Main Mobile Design */
+
+    main section{
+        margin-top: 24px;
+    }
 
     /* Banner Mobile Design */
 
@@ -286,4 +381,7 @@ body {
     .banner-form .form-item:last-child{
         grid-column: span 1;
     }
+
+
+    
 }
