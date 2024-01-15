@@ -9,10 +9,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Mulish", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .container {
@@ -23,8 +26,6 @@ body {
 
 .description {
     color: var(--info-color);
-    font-size: 16px;
-    font-weight: 400;
     line-height: 26px;
 }
 
@@ -35,6 +36,7 @@ body {
     color: #fff;
     font-size: 20px;
     font-weight: 800;
+    padding: 14px 35px;
 }
 
 .section-title {
@@ -69,67 +71,219 @@ body {
     font-weight: 800;
 }
 
-.navbar .nav-items{
+.navbar .nav-items {
     display: flex;
     gap: 44px;
     list-style: none;
 }
 
-.navbar .nav-items .nav-item{
+.navbar .nav-items .nav-item {
     color: #424247;
     font-size: 18px;
-    font-weight: 400;
 }
 
-.navbar .nav-items .active{
+.navbar .nav-items .active {
     color: var(--primary-color);
     font-weight: 700;
 }
 
+.navbar .toggler{
+    display: none;
+}
+
+
+/* Banner Styles */
+
+.banner {
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../images/banner-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-container {
+    padding: 106px 185px;
+    text-align: center;
+}
+
+.banner-title {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.banner-container .description{
+    color: #fff;
+    margin-bottom: 48px;
+}
+
+.banner-form-container{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+}
+
+.banner-form{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.banner-form input[type="text"], .banner-form select{
+    padding: 16px;
+    border: 0;
+    border-radius:8px;
+}
+
+.banner-form .btn-primary{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.banner-form .form-item{
+    width: 100%;
+}
+
+.banner-form input::placeholder, .banner-form select{
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+}
+
+.banner-form .form-select{
+    position: relative;
+}
+
+.banner-form .form-select i{
+    position: absolute;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 20px;
+    top:14px;
+    right: 14px;
+}
+
+.banner-form select{
+    appearance: none;
+}
+
+.banner-form button.form-item{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* Responsive Style */
 
+
+/* extra large Screen */
+
+@media screen and (max-width:1400px){
+    .container{
+        width: 90%;
+    }
+}
+
+/* Large Screens */
+
+@media screen and (max-width: 1200px) {
+    .banner-container{
+        padding: 100px;
+    }
+}
+
+/* Medium Screen */
+@media screen and (max-width:992px){
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .banner-form{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .banner-form .form-item:last-child{
+        grid-column: span 3;
+    }
+}
+
+/* Small Screen */
+
+@media screen and (max-width:768px){
+    .banner-form{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner-form .form-item:first-child{
+        grid-column: span 2;
+    }
+
+    .banner-form .form-item:last-child{
+        grid-column: span 2;
+    }
+}
+
 /* Mobile Devices */
 
-@media screen and (max-width: 600px) {
-
-    /* Common Responsive Styles */
-    .container {
+@media screen and (max-width: 576px) {
+    .container{
         width: 90%;
     }
 
-    /* Navbar Responsive Styles */
+    /* Navbar Mobile Design */
 
-    .navbar {
-        margin: 20px 0;
+    .navbar{
+        flex-direction: row;
     }
 
-    .navbar .brand {
-        gap: 0.5rem;
+    .navbar .toggler{
+        display: block;
+    }
+
+    .navbar .nav-items{
+        display: none;
+    }
+
+    .navbar .brand h1{
+        font-size: 1.75rem;
+    }
+
+    .navbar .brand img{
+        width: 2.25rem;
     }
 
     .navbar .toggler .toggler-icon{
         font-size: 1.5rem;
     }
 
-    .navbar .nav-items {
-        display: none;
+
+    /* Banner Mobile Design */
+
+    .banner-container{
+        padding: 32px;
     }
 
-    .navbar .brand img{
-        width: 35px;
-    }
-
-    .navbar .brand h1 {
+    .banner-title{
         font-size: 1.5rem;
-    } 
-}
+        margin-bottom: 8px;
+    }
 
-/* Large Screens */
+    .banner-container .description{
+        margin-bottom: 32px;
+    }
 
-@media screen and (min-width: 992px) {
-    .navbar .toggler {
-        display: none;
+    .banner-form{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+
+    .banner-form .form-item:first-child{
+        grid-column: span 1;
+    }
+
+    .banner-form .form-item:last-child{
+        grid-column: span 1;
     }
 }
