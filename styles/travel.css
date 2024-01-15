@@ -1,0 +1,43 @@
+/* Common Styles */
+
+:root{
+    --primary-color: #FF5400;
+    --text-primary:#131318;
+    --text-secondary:#5A5A5D;
+    --text-white:#fff;
+}
+
+body{
+    font-family: "Mulish", sans-serif;
+}
+
+.container{
+    width: 81.25%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.description{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.btn-primary{
+    border-radius: 8px;
+    background: var(--primary-color);
+    border: 0;
+    color: var(--text-white);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.section-title{
+    color: var(--text-primary);
+    font-size: 40px;
+    font-weight: 800;
+}
+
+/* Nav Style */
+
