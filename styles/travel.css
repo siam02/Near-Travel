@@ -332,11 +332,6 @@ main section {
     margin-bottom: 32px;
 }
 
-.reason .section-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
 
 /* Deals and Discount Section Style */
 
@@ -379,13 +374,6 @@ main section {
 
 .deal-info i {
     margin-right: 8px;
-}
-
-.deal-title {
-    color: var(--secondary-color);
-    font-size: 24px;
-    font-weight: 800;
-    margin-bottom: 16px;
 }
 
 .deal-content .description {
@@ -480,11 +468,6 @@ main section {
     border-radius: 16px;
     border: 1px solid #FF5400;
     padding: 40px;
-}
-
-.newsletter .section-title {
-    font-size: 24px;
-    margin-bottom: 16px;
 }
 
 .newsletter hr {
