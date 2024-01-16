@@ -365,7 +365,7 @@ main section {
     margin-bottom: 26px;
 }
 
-.deal-info i{
+.deal-info i {
     margin-right: 8px;
 }
 
@@ -386,35 +386,124 @@ main section {
     margin-bottom: 24px;
 }
 
-.deal-content .btn-primary{
+.deal-content .btn-primary {
     padding: 14px 25px;
 }
 
-.deal-btn-container{
+.deal-btn-container {
     text-align: center;
     margin-top: 48px;
 }
 
 /* Video Section Style */
 
-.video{
+.video {
     display: flex;
     gap: 28px;
     align-items: center;
 }
 
-.video .description ul li{
+.video .description ul li {
     color: var(--secondary-color);
     font-weight: 700;
 }
 
-.video-col{
+.video-col {
     flex: 1;
 }
 
-.video-container video{
+.video-container video {
     width: 100%;
     border-radius: 16px;
+}
+
+/* Newsletter Section Style */
+
+.newsletter {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+}
+
+.newsletter-col:first-child {
+    grid-column: span 5;
+}
+
+.newsletter-col:last-child {
+    grid-column: span 7;
+}
+
+.newsletter-img-container {
+    border-radius: 16px;
+    background: url('../images/newsletter.png'), lightgray 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.newsletter-img-container .discount-container {
+    position: absolute;
+    right: 12px;
+    bottom: 45px;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    background-color: var(--primary-color);
+    border-radius: 16px;
+    transform: rotate(-19.628deg);
+}
+
+.newsletter-img-container .discount-container .site-name {
+    font-size: 24px;
+}
+
+.newsletter-img-container .discount-container .discount {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.newsletter-content-container {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+}
+
+.newsletter .section-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.newsletter hr {
+    border: 0;
+    border-top: 1px solid rgba(19, 19, 24, 0.05);
+    margin: 24px 0;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+    border: 0;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 16px 20px;
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(19, 19, 24, 0.30);
+}
+
+.newsletter-form input[type="text"] {
+    margin-bottom: 16px;
+}
+
+.newsletter-form input[type="email"] {
+    margin-bottom: 24px;
 }
 
 /* Responsive Style */
@@ -464,12 +553,12 @@ main section {
         grid-column: span 1 !important;
     }
 
-    .deal-info{
+    .deal-info {
         flex-wrap: wrap;
         margin-bottom: 18px;
     }
 
-    .deal-info .time{
+    .deal-info .time {
         width: 100%;
     }
 }
@@ -489,6 +578,12 @@ main section {
         grid-column: span 2;
     }
 
+    /* Choose us Section */
+
+    .reason:last-child{
+        width: 100%;
+    }
+
     /* Popular Tour Section */
 
     .popular {
@@ -503,7 +598,60 @@ main section {
     .deal-content {
         width: 100%;
     }
+
+    /* video section mobile design */
+
+    .video {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    /* Newsletter Section Mobile Design */
+
+    .newsletter {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .newsletter-col:first-child {
+        grid-column: span 1;
+    }
+
+    .newsletter-col:last-child {
+        grid-column: span 1;
+    }
+
+    .newsletter-img-container .discount-container {
+        padding: 20px;
+        border-radius: 10px;
+        bottom: 32px;
+    }
+
+    .newsletter-img-container .discount-container .site-name {
+        font-size: 16px;
+    }
+
+    .newsletter-img-container .discount-container .discount {
+        font-size: 22px;
+    }
+
+    .newsletter-content-container {
+        padding: 24px;
+    }
+
+    .newsletter hr {
+        margin: 16px 0;
+    }
+
+    .newsletter .section-title {
+        margin-bottom: 8px;
+    }
     
+    .newsletter-form input[type="email"] {
+        margin-bottom: 20px;
+    }
+
 }
 
 /* Mobile Devices */
@@ -636,8 +784,8 @@ main section {
     /* Deals and Discount Section Mobile Style */
 
     .deal {
-        padding: 16px ;
-        padding-top: 190px ;
+        padding: 16px;
+        padding-top: 190px;
         display: flex;
         flex-direction: column;
         justify-content: end;
@@ -652,15 +800,9 @@ main section {
         padding: 25px;
     }
 
-    .deal-btn-container{
+    .deal-btn-container {
         display: none;
     }
-
-    /* video section mobile design */
-
-    .video{
-        flex-direction: column;
-        gap: 24px;
-    }
+    
 
 }
