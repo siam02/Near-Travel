@@ -105,7 +105,7 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 0;
+    padding: 50px 0;
 }
 
 .navbar .brand {
@@ -826,6 +826,7 @@ main section {
 
     .navbar {
         flex-direction: row;
+        padding: 20px 0;
     }
 
     .navbar .toggler {
