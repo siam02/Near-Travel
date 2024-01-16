@@ -254,11 +254,6 @@ main section {
 
 /* Destination Section Style */
 
-.section-description {
-    width: 60%;
-    margin: 0 auto;
-}
-
 .destination .location-container {
     margin-top: 48px;
     display: grid;
@@ -579,7 +574,7 @@ main section {
     font-size: 32px;
 }
 
-.footer-container .description {
+.footer-container .section-description {
     margin-bottom: 33px;
 }
 
@@ -636,7 +631,7 @@ main section {
     }
 
     .section-description {
-        width: 100%;
+        width: 90%;
     }
 
     .destination .location-container {
