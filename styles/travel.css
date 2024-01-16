@@ -852,6 +852,11 @@ main section {
         display: block;
     }
 
+    .navbar .toggler button{
+        background-color: unset;
+        border: none;
+    }
+
     .navbar .nav-items {
         display: none;
     }
