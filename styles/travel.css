@@ -902,6 +902,12 @@ main section {
         grid-column: span 1 !important;
     }
 
+    .location{
+        padding: 75px 0;
+    }
+
+    
+
     /* Why choose use Mobile Design */
 
     .chooseUS-reason-container {
