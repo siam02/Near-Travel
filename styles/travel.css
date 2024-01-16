@@ -23,6 +23,11 @@ a {
     text-decoration: none;
 }
 
+hr{
+    border: 0;
+    border-top: 1px solid rgba(19, 19, 24, 0.05);
+}
+
 .container {
     width: 81.25%;
     max-width: 1170px;
@@ -476,8 +481,6 @@ main section {
 }
 
 .newsletter hr {
-    border: 0;
-    border-top: 1px solid rgba(19, 19, 24, 0.05);
     margin: 24px 0;
 }
 
@@ -504,6 +507,59 @@ main section {
 
 .newsletter-form input[type="email"] {
     margin-bottom: 24px;
+}
+
+/* Footer Section Style */
+
+.footer{
+    margin-top: 100px;
+    padding: 110px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer-container{
+    max-width: 872px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.footer-container .brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-container .brand img{
+    width: 40px;
+}
+
+.footer-container .brand .section-title{
+    margin-bottom: 0;
+    font-size: 32px;
+}
+
+.footer-container .description{
+    margin-bottom: 33px;
+}
+
+.footer-container .social-links{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.footer-container .social-links i{
+    font-size: 24px;
+}
+
+.footer-container hr{
+    margin: 50px 0;
+}
+
+.footer .copyright{
+    font-weight: 300;
 }
 
 /* Responsive Style */
@@ -560,6 +616,16 @@ main section {
 
     .deal-info .time {
         width: 100%;
+    }
+
+    /* Footer Section */
+
+    .footer-container{
+        width: 80%;
+    }
+
+    .footer{
+        padding: 100px 20px;
     }
 }
 
@@ -650,6 +716,16 @@ main section {
     
     .newsletter-form input[type="email"] {
         margin-bottom: 20px;
+    }
+
+    /* Footer Section */
+
+    .footer{
+        padding: 100px 20px;
+    }
+
+    .footer-container{
+        width: 100%;
     }
 
 }
@@ -803,6 +879,11 @@ main section {
     .deal-btn-container {
         display: none;
     }
+
+    /* Footer Section Mobile Design */
     
+    .footer{
+        padding: 35px 20px;
+    }
 
 }
