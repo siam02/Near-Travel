@@ -18,7 +18,7 @@ body {
     font-weight: 400;
 }
 
-a{
+a {
     color: unset;
     text-decoration: none;
 }
@@ -29,34 +29,35 @@ a{
     margin: 0 auto;
 }
 
-.description, .section-description {
+.description,
+.section-description {
     color: var(--info-color);
     line-height: 26px;
 }
 
-.section-description{
+.section-description {
     width: 60%;
     margin: 0 auto;
 }
 
-.description p{
+.description p {
     margin-bottom: 24px;
 }
 
-.description ul{
+.description ul {
     margin-left: 2rem;
-    margin-bottom:24px ;
+    margin-bottom: 24px;
 }
 
-.description ul li{
+.description ul li {
     margin-bottom: 16px;
 }
 
-.description ul li:last-child{
+.description ul li:last-child {
     margin-bottom: 0;
 }
 
-.description p:last-child{
+.description p:last-child {
     margin-bottom: 0;
 }
 
@@ -81,7 +82,7 @@ a{
     color: var(--primary-color) !important;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
@@ -123,7 +124,7 @@ a{
     font-weight: 700;
 }
 
-.navbar .toggler{
+.navbar .toggler {
     display: none;
 }
 
@@ -149,60 +150,62 @@ a{
     margin-bottom: 24px;
 }
 
-.banner-container .description{
+.banner-container .description {
     color: #fff;
     margin-bottom: 48px;
 }
 
-.banner-form-container{
+.banner-form-container {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
     padding: 16px;
 }
 
-.banner-form{
+.banner-form {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
-.banner-form input[type="text"], .banner-form select{
+.banner-form input[type="text"],
+.banner-form select {
     padding: 16px;
     border: 0;
-    border-radius:8px;
+    border-radius: 8px;
 }
 
-.banner-form .btn-primary{
+.banner-form .btn-primary {
     font-size: 16px;
     font-weight: 700;
 }
 
-.banner-form .form-item{
+.banner-form .form-item {
     width: 100%;
 }
 
-.banner-form input::placeholder, .banner-form select{
+.banner-form input::placeholder,
+.banner-form select {
     color: rgba(19, 19, 24, 0.50);
     font-size: 16px;
 }
 
-.banner-form .form-select{
+.banner-form .form-select {
     position: relative;
 }
 
-.banner-form .form-select i{
+.banner-form .form-select i {
     position: absolute;
     color: rgba(19, 19, 24, 0.50);
     font-size: 20px;
-    top:14px;
+    top: 14px;
     right: 14px;
 }
 
-.banner-form select{
+.banner-form select {
     appearance: none;
 }
 
-.banner-form button.form-item{
+.banner-form button.form-item {
     display: flex;
     gap: 8px;
     justify-content: center;
@@ -212,38 +215,38 @@ a{
 
 /* Main section Style */
 
-main section{
+main section {
     margin-top: 100px;
 }
 
 /* Popular Tour Section Styles */
 
-.popular{
+.popular {
     display: flex;
     gap: 50px;
     align-items: center;
 }
 
-.popular .description{
+.popular .description {
     margin-bottom: 32px;
 }
 
-.popular .popular-col{
+.popular .popular-col {
     flex: 1;
 }
 
-.popular-img{
+.popular-img {
     width: 100%;
 }
 
 /* Destination Section Style */
 
-.section-description{
+.section-description {
     width: 60%;
     margin: 0 auto;
 }
 
-.destination .location-container{
+.destination .location-container {
     margin-top: 48px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -251,7 +254,7 @@ main section{
     gap: 24px;
 }
 
-.location{
+.location {
     background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), var(--location), lightgray 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -266,37 +269,37 @@ main section{
 }
 
 
-.location-container .location-1{
+.location-container .location-1 {
     grid-column: span 6;
 }
 
-.location-container .location-2{
+.location-container .location-2 {
     grid-column: span 6;
 }
 
-.location-container .location-3{
+.location-container .location-3 {
     grid-column: span 4;
 }
 
-.location-container .location-4{
+.location-container .location-4 {
     grid-column: span 5;
 }
 
-.location-container .location-5{
+.location-container .location-5 {
     grid-column: span 3;
 }
 
-.location-container .location-6{
+.location-container .location-6 {
     grid-column: span 5;
 }
 
-.location-container .location-7{
+.location-container .location-7 {
     grid-column: span 7;
 }
 
 /* Why choose us section style */
 
-.chooseUS-reason-container{
+.chooseUS-reason-container {
     margin-top: 2.875rem;
     display: flex;
     justify-content: center;
@@ -304,7 +307,7 @@ main section{
     flex-wrap: wrap;
 }
 
-.reason{
+.reason {
     width: calc((100% - 24px) / 2);
     background-color: var(--bg-color);
     border: 1px solid var(--border-color);
@@ -312,14 +315,84 @@ main section{
     border-radius: 16px;
 }
 
-.reason img{
+.reason img {
     width: 64px;
     margin-bottom: 32px;
 }
 
-.reason .section-title{
+.reason .section-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+}
+
+
+/* Deals and Discount Section Style */
+
+.deals-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.deal {
+    background-image: var(--deal-img);
+    padding: 56px;
+    display: flex;
+    justify-content: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+}
+
+.deal:nth-child(2) {
+    justify-content: start;
+}
+
+.deal-content {
+    width: 50%;
+    padding: 50px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+}
+
+.deal-info {
+    display: flex;
+    gap: 24px;
+    color: var(--info-color);
+    margin-bottom: 26px;
+}
+
+.deal-info i{
+    margin-right: 8px;
+}
+
+.deal-title {
+    color: var(--secondary-color);
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.deal-content .description {
+    margin-bottom: 16px;
+}
+
+.deal-content .deal-price {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.deal-content .btn-primary{
+    padding: 14px 25px;
+}
+
+.deal-btn-container{
+    text-align: center;
+    margin-top: 48px;
 }
 
 /* Responsive Style */
@@ -327,8 +400,8 @@ main section{
 
 /* extra large Screen */
 
-@media screen and (max-width:1400px){
-    .container{
+@media screen and (max-width:1400px) {
+    .container {
         width: 90%;
     }
 }
@@ -336,31 +409,31 @@ main section{
 /* Large Screens */
 
 @media screen and (max-width: 1200px) {
-    .banner-container{
+    .banner-container {
         padding: 100px;
     }
 }
 
 /* Medium Screen */
-@media screen and (max-width:992px){
-    .navbar{
+@media screen and (max-width:992px) {
+    .navbar {
         flex-direction: column;
         gap: 20px;
     }
 
-    .banner-form{
+    .banner-form {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .banner-form .form-item:last-child{
+    .banner-form .form-item:last-child {
         grid-column: span 3;
     }
 
-    .section-description{
+    .section-description {
         width: 100%;
     }
 
-    .destination .location-container{
+    .destination .location-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
@@ -368,33 +441,47 @@ main section{
     .location-container .location {
         grid-column: span 1 !important;
     }
+
+    .deal-info{
+        flex-wrap: wrap;
+        margin-bottom: 18px;
+    }
+
+    .deal-info .time{
+        width: 100%;
+    }
 }
 
 /* Small Screen */
 
-@media screen and (max-width:768px){
-    .banner-form{
+@media screen and (max-width:768px) {
+    .banner-form {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .banner-form .form-item:first-child{
+    .banner-form .form-item:first-child {
         grid-column: span 2;
     }
 
-    .banner-form .form-item:last-child{
+    .banner-form .form-item:last-child {
         grid-column: span 2;
     }
 
     /* Popular Tour Section */
 
-    .popular{
+    .popular {
         flex-direction: column;
         gap: 24px;
     }
 
-    .popular .description{
+    .popular .description {
         margin-bottom: 24px;
     }
+
+    .deal-content {
+        width: 100%;
+    }
+    
 }
 
 /* Mobile Devices */
@@ -406,7 +493,7 @@ main section{
         font-size: 0.875rem;
     }
 
-    .container{
+    .container {
         width: 90%;
     }
 
@@ -414,89 +501,89 @@ main section{
         color: var(--info-color);
         line-height: 24px;
     }
-    
-    .description p{
+
+    .description p {
         margin-bottom: 16px;
     }
-    
-    .description ul{
+
+    .description ul {
         margin-left: 2rem;
-        margin-bottom:16px ;
+        margin-bottom: 16px;
     }
-    
-    .description ul li{
+
+    .description ul li {
         margin-bottom: 12px;
     }
 
-    .section-title{
+    .section-title {
         font-size: 1.25rem;
         margin-bottom: 1rem;
     }
-    
+
 
     /* Navbar Mobile Design */
 
-    .navbar{
+    .navbar {
         flex-direction: row;
     }
 
-    .navbar .toggler{
+    .navbar .toggler {
         display: block;
     }
 
-    .navbar .nav-items{
+    .navbar .nav-items {
         display: none;
     }
 
-    .navbar .brand h1{
+    .navbar .brand h1 {
         font-size: 1.75rem;
     }
 
-    .navbar .brand img{
+    .navbar .brand img {
         width: 2.25rem;
     }
 
-    .navbar .toggler .toggler-icon{
+    .navbar .toggler .toggler-icon {
         font-size: 1.5rem;
     }
 
     /* Main Mobile Design */
 
-    main section{
+    main section {
         margin-top: 24px;
     }
 
     /* Banner Mobile Design */
 
-    .banner-container{
+    .banner-container {
         padding: 32px;
     }
 
-    .banner-title{
+    .banner-title {
         font-size: 1.5rem;
         margin-bottom: 8px;
     }
 
-    .banner-container .description{
+    .banner-container .description {
         margin-bottom: 32px;
     }
 
-    .banner-form{
+    .banner-form {
         grid-template-columns: repeat(1, 1fr);
         gap: 16px;
     }
 
-    .banner-form .form-item:first-child{
+    .banner-form .form-item:first-child {
         grid-column: span 1;
     }
 
-    .banner-form .form-item:last-child{
+    .banner-form .form-item:last-child {
         grid-column: span 1;
     }
 
     /* Destination Section Mobile Design */
 
-    .destination .location-container{
+    .destination .location-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 16px;
     }
@@ -507,21 +594,44 @@ main section{
 
     /* Why choose use Mobile Design */
 
-    .chooseUS-reason-container{
+    .chooseUS-reason-container {
         flex-direction: column;
     }
 
-    .reason{
+    .reason {
         width: 100%;
     }
 
-    .reason img{
+    .reason img {
         width: 48px;
         margin-bottom: 16px;
     }
-    
-    .reason .section-title{
+
+    .reason .section-title {
         font-size: 1.25rem;
     }
-    
+
+    /* Deals and Discount Section Mobile Style */
+
+    .deal {
+        padding: 16px ;
+        padding-top: 190px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .deal:nth-child(2) {
+        justify-content: end;
+    }
+
+    .deal-content {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .deal-btn-container{
+        display: none;
+    }
+
 }
