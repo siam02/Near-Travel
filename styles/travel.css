@@ -71,6 +71,10 @@ body {
     color: var(--primary-color) !important;
 }
 
+.text-center{
+    text-align: center;
+}
+
 /* Nav Style */
 
 .navbar {
@@ -222,6 +226,63 @@ main section{
     width: 100%;
 }
 
+/* Destination Section Style */
+
+.destination .description{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.destination .location-container{
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.location{
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), var(--location), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 1.75rem;
+    font-weight: 800;
+    padding: 125px 0;
+}
+
+
+.location-container .location-1{
+    grid-column: span 6;
+}
+
+.location-container .location-2{
+    grid-column: span 6;
+}
+
+.location-container .location-3{
+    grid-column: span 4;
+}
+
+.location-container .location-4{
+    grid-column: span 5;
+}
+
+.location-container .location-5{
+    grid-column: span 3;
+}
+
+.location-container .location-6{
+    grid-column: span 5;
+}
+
+.location-container .location-7{
+    grid-column: span 7;
+}
 
 /* Responsive Style */
 
@@ -255,6 +316,19 @@ main section{
 
     .banner-form .form-item:last-child{
         grid-column: span 3;
+    }
+
+    .destination .description{
+        width: 100%;
+    }
+
+    .destination .location-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .location-container .location {
+        grid-column: span 1 !important;
     }
 }
 
@@ -382,6 +456,15 @@ main section{
         grid-column: span 1;
     }
 
+    /* Destination Section Mobile Design */
 
+    .destination .location-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+
+    .location-container .location {
+        grid-column: span 1 !important;
+    }
     
 }
