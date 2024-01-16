@@ -678,6 +678,7 @@ main section {
     }
 
     .footer {
+        margin-top: 50px;
         padding: 100px 20px;
     }
 }
@@ -906,11 +907,10 @@ main section {
         padding: 75px 0;
     }
 
-    
-
     /* Why choose use Mobile Design */
 
     .chooseUS-reason-container {
+        margin-top: 1rem;
         flex-direction: column;
     }
 
@@ -937,6 +937,10 @@ main section {
         justify-content: end;
     }
 
+    .deals-container {
+        margin-top: 1rem;
+    }
+
     .deal:nth-child(2) {
         justify-content: end;
     }
@@ -953,6 +957,7 @@ main section {
     /* Footer Section Mobile Design */
 
     .footer {
+        margin-top: 24px;
         padding: 35px 20px;
     }
 
